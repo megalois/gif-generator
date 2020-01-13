@@ -1,5 +1,6 @@
 import math
 import argparse
+import os
 from PIL import Image
 
 parser = argparse.ArgumentParser(description='Generate GIF from single image.')
@@ -19,7 +20,8 @@ with Image.open(args.file_name) as im:
         pos_x = i % args.w_images * sprite_w     # (0...7)(0...7)(0...7) * W
         pos_y = i // args.w_images * sprite_h    # (0...0)(1...1)(2...2) * H
         gif_images.append(im.crop((pos_x, pos_y, pos_x + sprite_w, pos_y + sprite_h)))
-    gif_images[0].save('yoga_frog.gif',
+        fn, _ = os.path.splitext(args.file_name)
+    gif_images[0].save('{}.gif'.format(fn),
                        save_all=True,
                        append_images=gif_images[1:],
                        optimize=False, 
