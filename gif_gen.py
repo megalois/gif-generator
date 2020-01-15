@@ -26,5 +26,4 @@ with Image.open(args.file_name) as im:
                        append_images=gif_images[1:],
                        optimize=False, 
                        duration=40, 
-                       loop=0
-                      )
+                       loop=0)
