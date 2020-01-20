@@ -1,11 +1,11 @@
 # GIF generator
 
-Generate GIF from a sprite sheet or directory.
+Command-line tool to generate a GIF from a sprite sheet or directory.
 
 usage:
 
 ~~~~
-gif_gen.py [-h] [--w W] [--t T] [--d D] [--loop LOOP] src
+gifgen [-h] [--w W] [--t T] [--d D] [--loop LOOP] src
 ~~~~
 
 positional arguments:
@@ -27,15 +27,15 @@ pip install -r requirements.txt
 ## Examples
 
 ~~~~
-$ python gif_gen.py examples/yoga_frog.png --w 8 --t 48
+$ gifgen examples/yoga_frog.png --w 8 --t 48
 ~~~~
 
 ~~~~
-$ python gif_gen.py examples/fox.png --w 6 --t 28 --d 50
+$ gifgen examples/fox.png --w 6 --t 28 --d 50
 ~~~~
 
 ~~~~
-$ python gif_gen.py examples/shrine --d 500
+$ gifgen examples/shrine --d 500
 ~~~~
 
 ## Next
