@@ -20,8 +20,12 @@ optional arguments:
 
 ## Installation
 
+You can optionally create an environment.
+Then run:
+
 ~~~~
-pip install -r requirements.txt
+$ cd gifgen
+$ pip install .
 ~~~~
 
 ## Examples
