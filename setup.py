@@ -13,5 +13,5 @@ setup(name='gifgen',
           'console_scripts': ['gifgen=gifgen.gifgen:main'],
       },
       install_requires=[
-          'Pillow==7.0.0'
+          'Pillow==8.3.2'
       ])
